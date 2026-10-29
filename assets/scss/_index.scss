@@ -7,3 +7,7 @@ body {
 .main {
   @include flex(80px);
 }
+
+.news-section{
+  writing-mode:vertical-rl;
+}
