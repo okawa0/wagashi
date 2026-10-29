@@ -1,0 +1,46 @@
+$font-size-md: 1rem;
+$font-size-sm: 0.9rem;
+
+@mixin title {
+  font-weight: 700;
+  font-size: 2rem;
+  border-bottom: 1px solid #383e45;
+}
+
+@mixin container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+  max-width: 960px;
+  margin-inline: auto;
+  padding-inline: 4%;
+}
+
+@mixin flex($size) {
+  display: flex;
+  flex-direction: column;
+  gap: $size;
+}
+
+@mixin mq {
+  @media (min-width: 640px) {
+    @content;
+  }
+}
+
+@font-face {
+  font-family: "ZenOldMincho";
+  src: url(/assets/fonts/ZenOldMincho-Bold.woff2);
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "ZenOldMincho";
+  src: url(/assets/fonts/ZenOldMincho-Regular.woff2);
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}

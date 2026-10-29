@@ -1,0 +1,9 @@
+@use "variables" as *;
+
+body {
+  font-family: "ZenOldMincho", "Yu Mincho", "游明朝", "Noto Serif JP", serif;
+}
+
+.main {
+  @include flex(80px);
+}
